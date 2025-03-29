@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="link-phone.css">
+    <script>
+        function form(){
+        let select = document.querySelector('#select').value
+        let nineone = document.querySelector('#nineone').value
+        let sel = document.querySelector('#sel').value
+        let ind = document.querySelector('#india').value
+
+
+        localStorage.setItem("countary" ,select )
+        localStorage.setItem("mobile-no",nineone)
+        if(select==sel){
+            alert('please select countary')
+            document.querySelector('#select').focus()
+            return false
+        }
+        else if(nineone == ""){
+            alert('please enter phone number')
+            document.querySelector('#nineone').focus()
+            return false
+        }
+        else if(isNaN(nineone)){
+            alert("enter a number")
+            document.querySelector('#nineone')
+            return false
+        }
+        else if(nineone.lenght>10 || nineone.length<10){
+            alert('please enter 10 digit number')
+            document.querySelector('#nineone').focus()
+            return false
+        }
+        
+        }
+    </script>
+</head>
+<body>
+    
+    <div class="div1"></div>
+    <div class="div2">
+        <img src="images\whatsapp1.png" alt="">
+        <h4>WhatsApp Web</h4>
+    </div>
+<div class="container">
+    <div class="container1">
+        <h2>Enter phone number</h2>
+        <p>Select a country and enter your WhatsApp phone number</p>
+        <form action="main.html" onsubmit="return form()" >
+        <select id="select">   
+                 <option value="select" id="sel" >select-countary </option>
+                 <option value="india" id="india">india</option>
+                 <option value="china">china</option>
+                 <option value="pakisan">pakistan</option>
+                 <option value="bhutan">bhutan</option>
+        </select>
+        <br><br>
+        <input type="text" placeholder="+91" id="nineone">
+        <br><br>
+        <input type="submit" value="NEXT" id="next">
+    </form>
+    </div>
+    <div class="container2">
+        
+            <h3 class="h3">TUTORIAL</h3>
+            <p class="need">Need help logging in?</p>
+            <img src="images/whatsapp-video.png" alt="" class="video">
+    
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,349 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+
+  .div1{
+    background-color: #009688;
+    height: 30vh;
+  }
+  
+  .container {
+    height: calc(100vh - 40px);
+    background: #fff;
+    display: flex;
+    position: absolute;
+    top: 30px;
+    left: 70px;
+    margin:0px 20px 0px 0px;
+    width: 90vw;
+  }
+  
+  .container .leftcontainer {
+    position: relative;
+    flex: 30%;
+    background: #fff;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+  }
+
+
+  .header {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    background: #ededed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+  }
+
+
+ 
+  .dpimg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border:3px solid #009688;
+  } 
+  
+  .nav_icons {
+    display: flex;
+  }
+  
+  .nav_icons li {
+    display: flex;
+    list-style: none;
+    cursor: pointer;
+    color: #51585c;
+    font-size: 1.5em;
+    margin-left: 22px;
+  }
+  
+  
+  .message_p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  
+  /* .message_p p {
+    color: #aaa;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    font-size: 0.9em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }  */
+
+  .message_p p {
+    color: #aaa;
+    font-size: 0.9em;
+    overflow: hidden;
+    white-space: nowrap; /* Ensures the text remains on one line */
+    text-overflow: ellipsis; /* Adds '...' if text overflows */
+  }
+  
+
+  
+ 
+  /* chat-list */
+  
+  .chatlist {
+    position: relative;
+    height: calc(100% - 110px);
+    overflow: auto;
+  } 
+  
+  .chatlist .block {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+    cursor: pointer;
+  }
+  
+
+  .chatlist .block:hover {
+    background: #f5f5f5;
+  }
+  
+  .chatlist .block .imgBox {
+    position: relative;
+    min-width: 45px;
+    height: 45px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .chatlist .block .content {
+    position: relative;
+    width: 100%;
+  }
+  
+ 
+  
+  .chatlist .block .content .name h4 {
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #111;
+  }
+  
+  .chatlist .block .content .name .time {
+    font-size: 0.75em;
+    color: #aaa;
+  }
+  
+  
+
+  a{
+    text-decoration: none;
+  }
+
+  .logo{
+    position: absolute;
+    top: 30px;
+    margin-left: 25px;
+    height: 100vh;
+    background: #ededed;
+    display: block;
+    width: 45px;
+  }
+
+.logo1 #msg{
+  position: absolute;
+  top: 50px;
+  left: 7px;
+}
+
+.logo1 #msg:hover{
+  scale: 1.1;
+}
+
+.logo1 #status:hover{
+  scale: 1.1;
+}
+
+.logo1 #people:hover{
+  scale: 1.1;
+}
+
+.logo1 #status{
+  position: absolute;
+  top: 100px;
+  left: 7px;
+}
+
+.logo1 #people{
+  position: absolute;
+  top: 150px;
+  left: 7px;
+}
+
+  .logo1 a{
+    color: #111111c0;
+    text-decoration: none;
+  }
+
+  .logo1 a i{
+    text-align: center;
+    margin: 20px 0px;
+    font-size: 1.5em;
+  }
+
+  .logo2 a {
+    margin: 20px 0px;
+    font-size: 1.5em;
+  }
+
+  .logo2 a{
+    color: #111111c0;
+    text-decoration: none;
+
+  }
+
+  .logo2 img{
+    position: absolute;
+    bottom: 50px;
+    left: 5px;
+    height: 35px;
+    border-radius: 50%;
+  }
+
+  .logo2 i{
+    position: absolute;
+    bottom: 100px;
+    left: 9px;
+    height: 35px;
+    border-radius: 50%;
+  }
+
+
+  /* status */
+
+    
+  .container .rightcontainer {
+    position: relative;
+    flex: 70%;
+    background: black;
+  }
+
+ 
+
+  .rightcontainer .div_icon{
+  position: absolute;
+  top: 20px;
+  left: 30px; 
+}
+
+.rightcontainer .div_icon h1{
+  font-size: 1em;
+  position: absolute;
+  top: 25px;
+  left: 170px;
+  color: white;
+  width: max-content;
+}
+
+/* .rightcontainer .div_icon #pause{
+  position: absolute;
+  top: 30px;
+  left: 400px;
+  color: white;
+  
+}
+.rightcontainer .div_icon #sound{
+  position: absolute;
+  top: 30px;
+  left: 450px;
+  color: white;
+  
+}.rightcontainer .div_icon #bar{
+  position: absolute;
+  top: 30px;
+  left: 496px;
+  color: white;
+  
+} */
+
+/* .rightcontainer .hr{
+  display: flex;
+}
+.rightcontainer .hr1{
+    height: 2px;
+    background: white;
+    border: none;
+    width: 13vw;
+    position: absolute;
+    top: 20px;
+    left: 185px;
+}
+.rightcontainer .hr2{
+    height: 2px;
+    background: white;
+    border: none;
+    width: 13vw;
+    position: absolute;
+    top: 20px;
+    left: 380px;
+} */
+
+  .rightcontainer #video{
+    position: relative;
+    top: 60px;
+    left: 240px;
+    width: 250px;
+    height: 400px;
+  }
+
+.rightcontainer input{
+  position: absolute;
+  bottom: 25px;
+  left: 180px;
+  width: 30vw;
+  padding:5px 10px ;
+  border-radius: 30px;
+  padding-left: 50px;
+}
+
+.rightcontainer #play{
+  position: absolute;
+  bottom: 30px;
+  left: 67%;
+color: #111;
+}
+
+.rightcontainer #smile{
+  position: absolute;
+  bottom: 30px;
+  left: 200px;
+  color: black;
+  z-index: 2;
+}
+
+.rightcontainer i{
+  color: white;
+}
+
+
+
+
+.logo2 #setting{
+  scale: 1.1;
+}
+
+.logo2 img:hover{
+  scale: 1.1;
+}
