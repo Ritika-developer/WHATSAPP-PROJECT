@@ -3,8 +3,218 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
+    <!-- <link rel="stylesheet" href="index.css"> -->
     <title>WHATSAPP</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body{
+    font-family: Arial, sans-serif;
+  }
+  
+  .span1{
+    background-color: #009688;
+    height: 20vh;
+    width: 100%;
+    display:flex;
+    align-items: center;
+    padding: 0 20px;
+   }
+
+
+   /* .span1{
+    background-color: #009688;
+    height: 30vh;
+    width: 100%;
+    display:flex;
+   } */
+
+   .span2{
+    background-color:#d9dbd5;
+    height:100%;
+    width:100%;
+   }
+
+   
+.span1 img{
+  height: 40px;
+  border-radius: 20px;
+}
+
+  /* .span1 .head_p{
+    position: absolute;
+    top: 40px;
+    left: 220px;
+  } */
+  .head_p{
+    margin-left: 20px;
+    font-size: 1.2rem;
+    color: white;
+  }
+
+  .container{ 
+    position: absolute;
+    top: 100PX;
+    left: 18vw;
+    /* left: 240px; */ 
+    box-shadow: 3px 3px 12px 0px black;
+    background-color: white;
+  } 
+
+
+  /* .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 3px 3px 12px 0px black;
+    background-color: white;
+  }
+   */
+
+  .leftcontainer{
+    display: flex;
+    /* width: 70vh; */
+  }
+
+ 
+  .text h2{
+    margin: 20px 0px 20px 20px ;
+ color: darkgray;
+ font-family:'Times New Roman', Times, serif;
+  }
+
+  .li1{
+    margin: 60px 0px 0px 60px ;
+  }
+  .li2 ,.li3,.li4{
+    margin: 20px 0px 0px 60px ;
+  }
+  .hr1{
+    margin: 58px 0px 30px 20px;
+  }
+
+  .hr2{
+    margin: 0px 10px 0px 0px;
+
+  }
+
+  img{
+    margin: 30px 10px 0px 170px;
+  }
+
+  .linkphone{
+    text-decoration: none;
+    margin: 0px 0px 0px 60px ;
+    color:#009688;
+  }
+
+  .linkphone:hover{
+    text-shadow: 2px 2px 12px  #009688;
+  }
+
+
+   .rightcontainer{
+    height: 100vh;
+    background-color:#e7e9e5;
+    align-items: center;
+  } 
+
+   .h3{
+  position: absolute;
+  left :350px;
+  top: 450px;
+  z-index: 2;
+  }
+
+  .need{
+    position: absolute;
+  left :332px;
+  top: 500px;
+  z-index: 2;
+    color:#009688;
+  }
+
+
+  .video{
+    position: absolute;
+    left :-15px;
+    top: 580px;
+    z-index: 2;
+  } 
+
+
+
+
+  @media screen and (max-width: 768px) {
+  .container {
+    position: static;
+    width: 100%;
+    box-shadow: none;
+  }
+
+  .leftcontainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .scanner img {
+    margin: 20px auto;
+    display: block;
+  }
+
+  .rightcontainer {
+    height: auto;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .h3 {
+    position: static;
+    margin-top: 20px;
+  }
+
+  .need {
+    position: static;
+    margin: 10px 0;
+  }
+
+  .video {
+    position: static;
+    width: 80%;
+    max-width: 300px;
+    margin: 20px auto;
+    display: block;
+  }
+
+  .span1 {
+    /* flex-direction: column; */
+    /* align-items: center; */
+    padding: 10px 0;
+  }
+
+
+  .span2{
+    display: none;
+  }
+
+  .head_p {
+    position: static;
+    margin-top: 10px;
+  }
+}
+
+
+    </style>
 </head>
 <body>
 
