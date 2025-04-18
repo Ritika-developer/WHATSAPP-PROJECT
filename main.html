@@ -293,16 +293,21 @@
                 <div class="message friend_msg">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br><span>12:15</span></p>
                 </div>
+                <div class="message my_msg">
+                    <p id="datashow"><br><span>12:15</span></p>
+                </div>
             </div>
             
             <!-- CHAT INPUT -->
+             <form action="">
             <div class="chat_input">
                 <i class="fa fa-face-smile"></i>
                 <!-- <ion-icon name="happy-outline"></ion-icon> -->
-                <input type="text" placeholder="Type a message" >
+                <input type="text" placeholder="Type a message" id="inpmsg" >
                 <i class="fa fa-microphone"></i>
-                <input type="submit" value="send" id="send_msg">
+                <input type="submit" value="send" id="send_msg" onclick="return book()">
             </div>
+        </form>
         </div>
     </div>
 
@@ -319,5 +324,7 @@
       
 
     </div>
+<script src="msgsend.js"></script>
+    
 </body>
 </html>

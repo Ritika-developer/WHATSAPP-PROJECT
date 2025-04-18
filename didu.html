@@ -296,13 +296,15 @@
             </div>
             
             <!-- CHAT INPUT -->
-            <div class="chat_input">
-                <i class="fa fa-face-smile"></i>
-                <!-- <ion-icon name="happy-outline"></ion-icon> -->
-                <input type="text" placeholder="Type a message" >
-                <i class="fa fa-microphone"></i>
-                <input type="submit" value="send" id="send_msg">
-            </div>
+            <form action="">
+                <div class="chat_input">
+                    <i class="fa fa-face-smile"></i>
+                    <!-- <ion-icon name="happy-outline"></ion-icon> -->
+                    <input type="text" placeholder="Type a message" id="inpmsg" >
+                    <i class="fa fa-microphone"></i>
+                    <input type="submit" value="send" id="send_msg" onclick="return book()">
+                </div>
+            </form>
         </div>
     </div>
 
