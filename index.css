@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .span1{
+    background-color: #009688;
+    height: 30vh;
+    width: 100%;
+    display:flex;
+   }
+   .span2{
+    background-color:#d9dbd5;
+    height:160vh;
+    width:100%;
+   }
+
+   
+.span1 img{
+  height: 40px;
+  border-radius: 20px;
+}
+
+  .span1 .head_p{
+    position: absolute;
+    top: 40px;
+    left: 220px;
+  }
+
+  .container{ 
+    position: absolute;
+    top: 100PX;
+    left: 18vw;
+    box-shadow: 3px 3px 12px 0px black;
+    background-color: white;
+  } 
+
+
+  .leftcontainer{
+    display: flex;
+  }
+
+ 
+  .text h2{
+    margin: 20px 0px 20px 20px ;
+ color: darkgray;
+ font-family:'Times New Roman', Times, serif;
+  }
+
+  .li1{
+    margin: 60px 0px 0px 60px ;
+  }
+  .li2 ,.li3,.li4{
+    margin: 20px 0px 0px 60px ;
+  }
+
+  ol{
+    margin-bottom: 50px;
+  }
+
+  img{
+    margin: 30px 10px 0px 170px;
+  }
+
+  .linkphone{
+    text-decoration: none;
+    margin: 0px 0px 0px 60px ;
+    color:#009688;
+  }
+
+  .linkphone:hover{
+    text-shadow: 2px 2px 12px  #009688;
+  }
+
+
+   .rightcontainer{
+    background-color:#e7e9e5;
+    align-items: center;
+  } 
+
+   .h3{
+  position: absolute;
+  left :350px;
+  top: 450px;
+  z-index: 2;
+  font-size: xx-large;
+  }
+
+  .need{
+    position: absolute;
+  left :28vw;
+  top: 500px;
+  z-index: 2;
+    color:#009688;
+    font-size: larger;
+  }
+
+
+  .video{
+    position: absolute;
+    left :18vh;
+    top: 580px;
+    /* z-index: 2; */
+    height: 300px;
+  } 
+
+
+
+
+/* Small mobile phones (max-width: 480px) */
+@media screen and (max-width: 480px) {
+  .container {
+    position: static;
+    width: 100%;
+    box-shadow: none;
+  }
+
+  .leftcontainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .scanner img {
+    margin: 10px auto;
+    display: block;
+    width: 80%;
+  }
+
+  .rightcontainer {
+    height: auto;
+    padding: 15px;
+    text-align: center;
+  }
+
+  .h3,
+  .need,
+  .video {
+    position: static;
+    margin: 10px 0;
+  }
+
+  .video {
+    width: 90%;
+    max-width: 250px;
+  }
+
+  .head_p {
+    margin-left: 10px;
+    font-size: 1rem;
+  }
+
+  .span2{
+    display: none;
+  }
+}
+
+
+
+
+
+/* Tablets and small laptops (481px to 768px) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .container {
+      position: static;
+      width: 100%;
+      box-shadow: none;
+    }
+  
+    .leftcontainer {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .text {
+      text-align: center;
+      padding: 20px;
+    }
+  
+    .scanner img {
+      margin: 20px auto;
+      display: block;
+      width: 70%;
+    }
+  
+    .rightcontainer {
+      height: auto;
+      padding: 20px;
+      text-align: center;
+    }
+  
+    .h3,
+    .need,
+    .video {
+      position: static;
+      margin: 10px 0;
+    }
+  
+    .video {
+      width: 80%;
+      max-width: 300px;
+    }
+  
+    .span1 {
+      padding: 10px 0;
+    }
+  
+    .span2 {
+      display: none;
+    }
+  
+    .head_p {
+      margin-top: 10px;
+    }
+  }
+  
+  /* Laptops (769px to 1024px) */
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    .container {
+      width: 90%;
+      left: 5vw;
+    }
+  
+    .leftcontainer {
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 20px;
+    }
+  
+    .scanner img {
+      width: 200px;
+    }
+  
+    .rightcontainer {
+      height: auto;
+      padding: 30px;
+    }
+  
+    .video {
+      width: 300px;
+    }
+  
+    .h3 {
+      top: 420px;
+      left: 300px;
+    }
+  
+    .need {
+      top: 470px;
+      left: 290px;
+    }
+  
+    .video {
+      top: 530px;
+      left: 0;
+    }
+ 
+  }
+  
+  /* Desktops and large screens (above 1024px) */
+  @media screen and (min-width: 1025px) {
+    .container {
+      width: 70vw;
+      left: 18vw;
+    }
+  
+    .leftcontainer {
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 30px;
+    }
+  
+    .scanner img {
+      width: 250px;
+    }
+  
+    .rightcontainer {
+      height: 100vh;
+    }
+  
+    .video {
+      width: 350px;
+    }
+
+  }
+  
+  

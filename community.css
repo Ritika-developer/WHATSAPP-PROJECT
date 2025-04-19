@@ -274,3 +274,123 @@ left: 7px;
   border-radius: 30%;
   margin-right: 10px;
 }
+
+
+/* For tablets and medium screens */
+@media screen and (max-width: 992px) {
+  .container {
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: auto;
+    margin: 0;
+  }
+
+  .leftcontainer, .rightcontainer {
+    width: 100%;
+    height: auto;
+  }
+
+  .rightcontainer img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 50%;
+    height: auto;
+  }
+
+  .rightcontainer button {
+    left: 30%;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .chatlist .block {
+    padding: 10px;
+  }
+
+  .chatlist .block .content .name h4 {
+    font-size: 1em;
+  }
+}
+
+/* For small screens (mobile phones) */
+@media screen and (max-width: 767px) {
+  .container {
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  .leftcontainer, .rightcontainer {
+    width: 100%;
+    height: auto;
+  }
+
+  .rightcontainer img {
+    margin: 20px auto 0;
+    width: 70%;
+  }
+
+  .rightcontainer h4 {
+    font-size: 24px;
+    margin: 15px 10px;
+  }
+
+  .rightcontainer p, .rightcontainer button {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .rightcontainer button {
+    left: 20%;
+    padding: 8px 30px;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .chatlist .block {
+    padding: 8px;
+  }
+
+  .chatlist .block .imgBox {
+    min-width: 40px;
+    height: 40px;
+  }
+
+  .chatlist .block .content .name h4 {
+    font-size: 0.95em;
+  }
+}
+
+/* For extra small screens (less than 480px) */
+@media screen and (max-width: 480px) {
+  .rightcontainer h4 {
+    font-size: 20px;
+  }
+
+  .rightcontainer p {
+    font-size: 12px;
+  }
+
+  .rightcontainer button {
+    left: 15%;
+    padding: 6px 20px;
+    font-size: 12px;
+  }
+
+  .chatlist .block .content .name h4 {
+    font-size: 0.9em;
+  }
+
+  .chatlist .block .content .name .time {
+    font-size: 0.65em;
+  }
+}

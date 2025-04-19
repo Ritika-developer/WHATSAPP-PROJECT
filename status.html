@@ -5,12 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WhatsApp UI Clone</title>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="status.css">
+    
 </head>
 <body>
     <div class="div1"></div>
-    <div class="container">
+    <div class="container" data-aos="fade-right">
         <div class="leftcontainer">
             <!-- Header -->
             <div class="header">
@@ -216,9 +221,10 @@
            <abbr title="setting"> <a href="setting.html"> <i class="fa fa-gear" id="setting"></i></a><br></abbr>
            <abbr title="profile"><a href="profile.html"><img src="images/user.jpg" alt=""></a></abbr>
         </div>
-      
-   
-  
 </div>
+
+<script>
+    AOS.init();
+  </script>
 </body>
 </html>

@@ -15,7 +15,7 @@
     data.map((e)=>{
         show.innerHTML+=`
           <div class="message my_msg">
-                    <p>${e.name}<br><span> </span></p>
+                    <p>${e.name}</p>
                 </div>
     
         `

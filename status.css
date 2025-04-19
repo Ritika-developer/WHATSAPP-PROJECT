@@ -240,3 +240,79 @@ top: 45%;
 left: 30%;
 }
 
+/* Large screens (desktops/laptops) */
+@media screen and (min-width: 1025px) {
+  .container {
+    flex-direction: row;
+  }
+
+  .leftcontainer {
+    flex: 30%;
+  }
+
+  .rightcontainer {
+    flex: 70%;
+  }
+}
+
+/* Medium screens (tablets) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    left: 0;
+    top: 0;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+
+  .leftcontainer,
+  .rightcontainer {
+    width: 100%;
+  }
+
+  .logo {
+    display: none;
+  }
+}
+
+/* Small screens (phones) */
+@media screen and (max-width: 767px) {
+  .container {
+    flex-direction: column;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  .leftcontainer,
+  .rightcontainer {
+    width: 100%;
+  }
+
+  .header h3 {
+    font-size: 1.2em;
+  }
+
+  .chatlist .block .content .name h4 {
+    font-size: 1em;
+  }
+
+  .chatlist .block {
+    padding: 10px;
+  }
+
+  .nav_icons li {
+    font-size: 1.2em;
+    margin-left: 10px;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .rightcontainer p {
+    left: 20%;
+    font-size: 0.9em;
+  }
+}

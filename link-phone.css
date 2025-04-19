@@ -1,74 +1,396 @@
-.div1{
-    background-color: #009688;
-    height: 30vh;
-  }
-
-  .div2{
-    display: flex;
-    position: absolute;
-    top: 20px;
-    left: 100px;
-  }
-
-  .div2 img{
-    margin-top: 8px;
-    height: 50px;
-margin-right: 20px;
-border-radius: 50%;
-  }
-
-  .container{
-    box-shadow: 2px 2px 12px black;
-  }
-
-  .container1{
-    position: absolute;
-    top: 90px;
-    left:15%;
-    width: 70vw;
-    background-color: white;
-    text-align: center;
-  }
-
-  .container1 h2{
-    color: darkgray;
-    margin-top: 50px;
-  }
-.container1 p{
-  color: darkgray;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
-  #select{
-    margin-top:50px;
-    margin-bottom: 20px;
-    padding:2px 30px;
-    cursor: pointer;
+
+
+.div1{
+  background-color: #009688;
+  height: 30vh;
+}
+
+
+
+.container {
+  height: calc(100vh - 40px);
+  background: #fff;
+  display: flex;
+  position: absolute;
+  top: 30px;
+  left: 70px;
+  margin:0px 20px 0px 0px;
+  width: 90vw;
+}
+
+.container .leftcontainer {
+  position: relative;
+  flex: 30%;
+  background: #fff;
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+
+.header {
+  position: relative;
+  width: 100%;
+  height: 60px;
+  background: #ededed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+}
+
+
+
+.dpimg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 30%;
+} 
+
+.nav_icons {
+  display: flex;
+}
+
+.nav_icons li {
+  display: flex;
+  list-style: none;
+  cursor: pointer;
+  color: #51585c;
+  font-size: 1.5em;
+  margin-left: 22px;
+}
+
+
+/* chat-list */
+
+
+.hrr{
+  height: 5px;
+  background-color:#ededed;
+  border: none;
+}
+.chatlist {
+  position: relative;
+  height: calc(100% - 110px);
+  overflow: auto;
+} 
+
+.chatlist .block {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+}
+
+
+.chatlist .block:hover {
+  background: #f5f5f5;
+}
+
+.chatlist .block .imgBox {
+  position: relative;
+  min-width: 45px;
+  height: 45px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.chatlist .block .content {
+  position: relative;
+  width: 100%;
+}
+
+
+
+.chatlist .block .content .name h4 {
+  font-size: 1.1em;
+  font-weight: 600;
+  color: #111;
+}
+
+.chatlist .block .content .name .time {
+  font-size: 0.75em;
+  color: #aaa;
+}
+.chatlist .block .content .name {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+a{
+  text-decoration: none;
+}
+
+.logo{
+  position: absolute;
+  top: 30px;
+  margin-left: 25px;
+  height: 100vh;
+  background: #ededed;
+  display: block;
+  width: 45px;
+}
+
+.logo1 #msg{
+position: absolute;
+top: 50px;
+left: 7px;
+}
+
+.logo1 #msg:hover{
+  scale: 1.1;
+}
+
+.logo1 #status{
+position: absolute;
+top: 100px;
+left: 7px;
+}
+
+.logo1 #status:hover{
+  scale: 1.1;
+}
+
+.logo1 #people{
+position: absolute;
+top: 150px;
+left: 7px;
+}
+
+.logo1 #people:hover{
+  scale: 1.1;
+}
+
+.logo1 a{
+  color: #111111c0;
+  text-decoration: none;
+}
+
+.logo1 a i{
+  text-align: center;
+  margin: 20px 0px;
+  font-size: 1.5em;
+}
+
+.logo2 a {
+  margin: 20px 0px;
+  font-size: 1.5em;
+}
+
+.logo2 a{
+  color: #111111c0;
+  text-decoration: none;
+
+}
+
+.logo2 img{
+  position: absolute;
+  bottom: 50px;
+  left: 5px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.logo2 i{
+  position: absolute;
+  bottom: 100px;
+  left: 9px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.logo2 #setting:hover{
+  scale: 1.1;
+}
+
+.logo2 img:hover{
+  scale: 1.1;
+}
+
+.rightcontainer{
+  width: 70%;
+  background-color:#ededed;
+}
+
+.rightcontainer img{
+  margin-top: 80px;
+  margin-left: 33%;
+  height: 30%;
+  width:30%;
+}
+
+.rightcontainer h4{
+  margin: 30px 0px;
+  text-align: center;
+  font-size:40px;
+}
+
+.rightcontainer p{
+  text-align: center;
+}
+
+.rightcontainer .rightside #end-to-end {
+  position: relative;
+  top:80px;
+  text-align: center;
+}
+
+.rightcontainer .rightside #end-to-end i {
+  position: relative;
+  top:3px;
+  left: -10px;
+  text-align: center;
+}
+
+.rightcontainer button{
+  position: relative;
+  top: 30px;
+  left: 38%;
+  background-color: #009688;
+  color: white;
+  padding:10px 50px;
+  border-radius: 20px;
+  border: none;
+}
+
+.chatlist .co-icon #fa-users{
+  background-color: green;
+  color: white;
+  padding: 10px;
+  border-radius: 30%;
+  margin-right: 10px;
+}
+
+
+/* For tablets and medium screens */
+@media screen and (max-width: 992px) {
+  .container {
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: auto;
+    margin: 0;
   }
 
-  #next{
-    margin-top: 20px;
-    background-color:#009688;
-    color: white;
+  .leftcontainer, .rightcontainer {
+    width: 100%;
+    height: auto;
   }
 
-  .container2{
-    margin-top: 20px;
-    position: absolute;
-    top: 415px;
-    left:15%;
-    width: 70vw;
-    height: 100vh;
-    background-color:#e7e9e5;
+  .rightcontainer img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 50%;
+    height: auto;
+  }
+
+  .rightcontainer button {
+    left: 30%;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .chatlist .block {
+    padding: 10px;
+  }
+
+  .chatlist .block .content .name h4 {
+    font-size: 1em;
+  }
+}
+
+/* For small screens (mobile phones) */
+@media screen and (max-width: 767px) {
+  .container {
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  .leftcontainer, .rightcontainer {
+    width: 100%;
+    height: auto;
+  }
+
+  .rightcontainer img {
+    margin: 20px auto 0;
+    width: 70%;
+  }
+
+  .rightcontainer h4 {
+    font-size: 24px;
+    margin: 15px 10px;
+  }
+
+  .rightcontainer p, .rightcontainer button {
+    font-size: 14px;
     text-align: center;
-
   }
 
-  .h3{
-    margin-top: 40px;
-    font-size: 1.8em;
+  .rightcontainer button {
+    left: 20%;
+    padding: 8px 30px;
   }
 
-  .need{
-    color:#009688;
-    margin-top: 50px;
-    margin-bottom: 80px;
+  .logo {
+    display: none;
   }
+
+  .chatlist .block {
+    padding: 8px;
+  }
+
+  .chatlist .block .imgBox {
+    min-width: 40px;
+    height: 40px;
+  }
+
+  .chatlist .block .content .name h4 {
+    font-size: 0.95em;
+  }
+}
+
+/* For extra small screens (less than 480px) */
+@media screen and (max-width: 480px) {
+  .rightcontainer h4 {
+    font-size: 20px;
+  }
+
+  .rightcontainer p {
+    font-size: 12px;
+  }
+
+  .rightcontainer button {
+    left: 15%;
+    padding: 6px 20px;
+    font-size: 12px;
+  }
+
+  .chatlist .block .content .name h4 {
+    font-size: 0.9em;
+  }
+
+  .chatlist .block .content .name .time {
+    font-size: 0.65em;
+  }
+}

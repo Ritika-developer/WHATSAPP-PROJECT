@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WhatsApp UI Clone</title>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
@@ -244,54 +248,44 @@
 
             <!-- CHAT-BOX -->
             <div class="chatbox">
-                <div class="message my_msg">
+                <div class="message my_msg" data-aos="zoom-in-left">
                     <p>Hi <br><span>12:18</span></p>
                 </div>
-                <div class="message friend_msg">
-                    <p>maira kal office off h  <br><span>12:18</span></p>
+                <div class="message friend_msg" data-aos="zoom-in-right">
+                    <p>Hey <br><span>12:18</span></p>
                 </div>
-                <div class="message my_msg">
-                    <p>hnn<br><span>12:15</span></p>
-                </div>
-                <div class="message friend_msg">
-                    <p>kal ghar ja raha hu mai tujhe chalna h <br><span>12:15</span></p>
-                </div>
-                <div class="message my_msg">
-                    <p>nahi app jao <br><span>12:15</span></p>
-                </div>
-                <div class="message friend_msg">
+                <div class="message my_msg" data-aos="zoom-in-left">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br><span>12:15</span></p>
                 </div>
-                <div class="message my_msg">
+                <div class="message friend_msg" data-aos="zoom-in-right">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br><span>12:15</span></p>
+                </div>
+                <div class="message my_msg" >
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque aliquid fugiat accusamus dolore qui vitae ratione optio sunt <br><span>12:15</span></p>
+                </div>
+                <div class="message friend_msg" >
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br><span>12:15</span></p>
+                </div>
+                <div class="message my_msg" >
                     <p>Lorem ipsum dolor sit amet consectetur <br><span>12:15</span></p>
                 </div>
-                <div class="message friend_msg">
+                <div class="message friend_msg" >
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br><span>12:15</span></p>
                 </div>
-                <div class="message my_msg">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br><span>12:15</span></p>
-                </div>
-                <div class="message friend_msg">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br><span>12:15</span></p>
-                </div>
-                <div class="message my_msg">
+                <div class="message my_msg" >
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br><span>12:15</span></p>
                 </div>
                 <div class="message friend_msg">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br><span>12:15</span></p>
                 </div>
-                <div class="message my_msg">
+                <div class="message my_msg" >
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br><span>12:15</span></p>
                 </div>
-                <div class="message friend_msg">
+               
+                <div class="message friend_msg" >
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br><span>12:15</span></p>
                 </div>
-                <div class="message my_msg">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br><span>12:15</span></p>
-                </div>
-                <div class="message friend_msg">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br><span>12:15</span></p>
-                </div>
+              
             </div>
             
             <!-- CHAT INPUT -->
@@ -301,7 +295,7 @@
                     <!-- <ion-icon name="happy-outline"></ion-icon> -->
                     <input type="text" placeholder="Type a message" id="inpmsg" >
                     <i class="fa fa-microphone"></i>
-                    <input type="submit" value="send" id="send_msg" onclick="return book()">
+                    <input type="submit" value="send" id="send_msg" onclick="return book1()">
                 </div>
             </form>
         </div>
@@ -320,5 +314,8 @@
 
     </div>
 
+<script>
+    AOS.init();
+  </script>
 </body>
 </html>
