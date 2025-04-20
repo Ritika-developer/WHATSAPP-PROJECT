@@ -28,22 +28,6 @@
   border-right: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-.container .rightcontainer {
-  position: relative;
-  flex: 70%;
-  background: #e5ddd5;
-}
-
-.container .rightcontainer::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url("images/pattern.png");
-  opacity: 0.06;
-}
 
 .header {
   position: relative;
@@ -88,21 +72,6 @@
 }
 
 
- .message_p {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-} 
-
-/* .message_p p {
-  color: #aaa;
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  font-size: 0.9em;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}  */
 
 .message_p p {
   color: #aaa;
@@ -112,24 +81,6 @@
   text-overflow: ellipsis; /* Adds '...' if text overflows */
 }
 
-
-.imgText {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.imgText h4 {
-  font-weight: 500;
-  line-height: 1.2em;
-  margin-left: 15px;
-}
-
-.imgText h4 span {
-  font-size: 0.8em;
-  color: #555;
-}
 
 
 /* chat-list */
@@ -190,91 +141,6 @@
 
 
 
-/* CHAT BOX */
-.chatbox {
-  position: relative;
-  width: 100%;
-  height: calc(100% - 120px);
-  padding: 50px;
-  overflow-y: auto;
-}
-
-
-.chatbox span{
-  color: #aaa;
-  font-size: 0.8em;
-}
-.message {
-  position: relative;
-  display: flex;
-  width: 100%;
-  margin: 5px 0;
-}
-
-.message p {
-  position: relative;
-  right: 0;
-  text-align: right;
-  max-width: 65%;
-  padding: 12px;
-  background: #dcf8c8;
-  border-radius: 10px;
-  font-size: 0.9em;
-}
-
-
-
-.my_msg {
-  justify-content:flex-end;
-}
-
-.friend_msg {
-  justify-content: flex-start;
-}
-
-.friend_msg p {
-  background: #fff;
-  text-align: left;
-}
-
-
-.chat_input {
-  position: relative;
-  width: 100%;
-  height: 60px;
-  background: #f0f0f0;
-  padding: 15px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.chat_input i {
-  cursor: pointer;
-  font-size: 1.5em;
-  color: #51585c;
-}
-
-/* .chat_input i:nth-child(1) {
-  margin-right: 15px;
-}
- */
-.chat_input input {
-  position: relative;
-  width: 90%;
-  margin: 0 20px;
-  padding: 10px 40px;
-  border: none;
-  outline: none;
-  border-radius: 30px;
-  font-size: 1em;
-}
-
-#send_msg{
-  background-color: rgba(116, 196, 13, 0.678);
-  padding: 10px  ;
-  width: 20%;
-}
 
 /* search-chat */
 
@@ -323,8 +189,8 @@ a{
 
 .logo{
   position: absolute;
-  top: 30px;
-  margin-left: 25px;
+  top: 0px;
+  margin-left: -45px;
   height: 100vh;
   background: #ededed;
   display: block;
@@ -484,4 +350,111 @@ scale: 1.1;
 .chat-bottom i {
   font-size: 14px;
 }
+}
+
+
+
+.app {
+  display: flex;
+  height: 95vh;
+  width: 100%;
+  background-color: #ece5dd;
+
+}
+
+.chat-area {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-header {
+  background-color: #075e54;
+  color: white;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 60vw;
+}
+.chat-header img{
+height: 50px;
+border-radius: 50%;
+}
+
+.chat-body {
+  flex: 1;
+  padding: 15px;
+  background-color: #ece5dd;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  width: 60vw;
+
+}
+
+.message {
+  max-width: 25%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  position: relative;
+  font-size: 14px;
+}
+
+.sent {
+  background-color: #dcf8c6;
+  align-self: flex-end;
+  text-align: right;
+}
+
+.received {
+  background-color: #fff;
+  align-self: flex-start;
+}
+
+.timestamp {
+  font-size: 10px;
+  color: gray;
+  margin-top: 5px;
+}
+
+.chat-input {
+  display: flex;
+  padding: 10px;
+  background-color: #f0f0f0;
+  width: 60vw;
+
+}
+
+
+
+.chat-input input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.chat-input button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  background-color: #075e54;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+
+ .my_msg{
+  align-self: flex-end;
+  background-color: #dcf8c6;
+
+}
+
+.friend_msg{
+  align-self: flex-start;
+  background-color: #dcf8c6;
 }

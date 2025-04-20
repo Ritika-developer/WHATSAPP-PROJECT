@@ -5,12 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WhatsApp UI Clone</title>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">   
+
 </head>
 <body>
     <div class="div1"></div>
-    <div class="container">
+    <div class="container" data-aos="fade-right">
         <div class="leftcontainer">
             <!-- Header -->
             <div class="header">
@@ -162,8 +167,7 @@
                 </div>
             </a>
 
-               
-            <a href="usha.html"> <div class="block">
+                <a href="usha.html"><div class="block">
                     <div class="imgBox">
                         <img src="images/img6.jpg" class="dp" alt="">
                     </div>
@@ -179,7 +183,7 @@
                 </div>
             </a>
 
-            <a href="p47.html"><div class="block">
+                <a href="p47.html"><div class="block">
                     <div class="imgBox">
                         <img src="images/img7.jpg" class="dp" alt="">
                     </div>
@@ -195,13 +199,13 @@
                 </div>
             </a>
 
-            <a href="didu.html"><div class="block">
+                <a href="chachaji.html"><div class="block">
                     <div class="imgBox">
                         <img src="images/img8.jpg" class="dp" alt="">
                     </div>
                     <div class="content">
                         <div class="name">
-                            <h4>didu</h4>
+                            <h4>chacha ji</h4>
                             <p class="time">17/01/2022</p>
                         </div>
                         <div class="message_p">
@@ -211,13 +215,13 @@
                 </div>
             </a>
 
-                <a href="chachaji.html"><div class="block">
+                <a href="didu.html"><div class="block">
                     <div class="imgBox">
                         <img src="images/img9.jpg" class="dp" alt="">
                     </div>
                     <div class="content">
                         <div class="name">
-                            <h4>chacha ji</h4>
+                            <h4>didu</h4>
                             <p class="time">15/01/2022</p>
                         </div>
                         <div class="message_p">
@@ -228,84 +232,47 @@
             </a>
             </div>
         </div>
-        <div class="rightcontainer">
-            <div class="header">
-                <div class="imgText">
-                    <div class="userimg">
-                        <img src="images/img3.jpg" alt="" class="dp">
+   
+            <div class="app">
+                <div class="chat-area">
+                  <div class="chat-header">
+                    <img src="images/img3.jpg" alt="DP">
+                    <div>
+                      <h4>ruchita bhua</h4>
+                      <p>online</p>
                     </div>
-                    <h4>ruchita bhua <br><span>online</span></h4>
+                  </div>
+            
+                  <div class="chat-body" id="chatBody">
+                    <div class="message my_msg">
+                        <p>Lorem, ipsum.  <br><span>12:18</span></p>
+                    </div>
+                    <div class="message friend_msg">
+                        <p>Lorem, ipsum dolor.<br><span>12:18</span></p>
+                    </div>
+                    <div class="message my_msg">
+                        <p>Lorem ipsum dolor sit amet consectetur.<br><span>12:18</span></p>
+                    </div>
+                    <div class="message friend_msg">
+                        <p>Lorem ipsum dolor sit. <br><span>12:18</span></p>
+                    </div>
+                    <!-- Messages will appear here -->
+                  </div>
+            
+                  <div class="chat-input">
+                    <input type="text" id="messageInput" placeholder="Type a message">
+                    <button onclick="sendMessage()">Send</button>
+                  </div>
                 </div>
-                <ul class="nav_icons">
-                    <li><i class="fa fa-phone"></i></li>
-                    <li><i class="fa fa-video"></i></li>
-                </ul>
+              
             </div>
 
             <!-- CHAT-BOX -->
-            <div class="chatbox">
-                <div class="message my_msg">
-                    <p>Hi <br><span>12:18</span></p>
-                </div>
-                <div class="message friend_msg">
-                    <p>Hey <br><span>12:18</span></p>
-                </div>
-                <div class="message my_msg">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br><span>12:15</span></p>
-                </div>
-                <div class="message friend_msg">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br><span>12:15</span></p>
-                </div>
-                <div class="message my_msg">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque aliquid fugiat accusamus dolore qui vitae ratione optio sunt <br><span>12:15</span></p>
-                </div>
-                <div class="message friend_msg">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br><span>12:15</span></p>
-                </div>
-                <div class="message my_msg">
-                    <p>Lorem ipsum dolor sit amet consectetur <br><span>12:15</span></p>
-                </div>
-                <div class="message friend_msg">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br><span>12:15</span></p>
-                </div>
-                <div class="message my_msg">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br><span>12:15</span></p>
-                </div>
-                <div class="message friend_msg">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br><span>12:15</span></p>
-                </div>
-                <div class="message my_msg">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br><span>12:15</span></p>
-                </div>
-                <div class="message friend_msg">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br><span>12:15</span></p>
-                </div>
-                <div class="message my_msg">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br><span>12:15</span></p>
-                </div>
-                <div class="message friend_msg">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br><span>12:15</span></p>
-                </div>
-                <div class="message my_msg">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br><span>12:15</span></p>
-                </div>
-                <div class="message friend_msg">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br><span>12:15</span></p>
-                </div>
-            </div>
+    
             
             <!-- CHAT INPUT -->
-            <form action="">
-                <div class="chat_input">
-                    <i class="fa fa-face-smile"></i>
-                    <!-- <ion-icon name="happy-outline"></ion-icon> -->
-                    <input type="text" placeholder="Type a message" id="inpmsg" >
-                    <i class="fa fa-microphone"></i>
-                    <input type="submit" value="send" id="send_msg" onclick="return book()">
-                </div>
-            </form>
-        </div>
-    </div>
+          
+
     <div class="logo">
         <div class="logo1">
            <abbr title="chat box"> <a href="main.html"> <i id="msg" class="fa fa-message"></i></a></abbr><br>
@@ -319,7 +286,11 @@
       
 
     </div>
-    <script src="msgsend.js"></script>
+    <script src="main.js"></script>
 
+<script src="msgsend.js"></script>
+<script>
+    AOS.init();
+  </script>
 </body>
 </html>
